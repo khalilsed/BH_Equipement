@@ -1,8 +1,9 @@
 function Melangeur(props){
     const { source, name } = props;
     return(
-        <div className="mb-20 flex-column w-284 h-422">
-          <img className="" src={source} alt="" />
+        <div className="mb-20 flex flex-col shadow-xl p-10 rounded-2xl border-rad cursor-pointer hover:bg-customBlue transition duration-300">
+          {/* hover:bg-opacity-75  */}
+          <img className="m-auto mb-5 " src={source} alt="" />
           <h3 className="text-black text-sm font-bold">{name}</h3>
           <p className="text-customGrey text-xs">Melangeur</p>
         </div>
